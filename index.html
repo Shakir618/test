@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome Page</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-direction: column;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.7rem 1.5rem;
+      font-size: 1.2rem;
+      background-color: #ffffffaa;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #2575fc;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #fff;
+      color: #1a4ed8;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Our Website!</h1>
+  <button id="welcomeBtn">Click me</button>
+
+  <script>
+    document.getElementById('welcomeBtn').addEventListener('click', () => {
+      alert('Thanks for visiting! Enjoy your stay.');
+    });
+  </script>
+</body>
+</html>
